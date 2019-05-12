@@ -1,0 +1,1 @@
+export { watchFetchMessageList } from './fetchMessageList';

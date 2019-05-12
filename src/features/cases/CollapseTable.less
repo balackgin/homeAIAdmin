@@ -1,0 +1,45 @@
+@import '../../styles/mixins';
+
+.cases-collapse-table {
+  background-color: #ffffff;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  // font-size: 12px;
+  .cases-collapse-table-header {
+    padding: 10px 24px;
+    border-bottom: 1px solid #DEDEDE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .cases-collapse-table-header-arrow {
+      padding: 5px;
+      border: 1px solid #DEDEDE;
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: bolder;
+      color: #DEDEDE;
+      cursor: pointer;
+    }
+  }
+  .cases-collapse-table-body {
+    padding: 15px 35px;
+    .cases-collapse-table-block {
+      margin-bottom: 20px;
+      .cases-collapse-table-image {
+        width: 90px;
+        height: 90px;
+      }
+      .cases-collapse-table-sub-title {
+        font-size: 12px;
+        color: #9B9B9B;
+        margin-left: 10px;
+      }
+      .cases-collapse-table-title {
+        border-left: 3px solid #2E7DFB;
+        padding: 2px 10px;
+        margin: 20px 0;
+      }
+    }
+  }
+}

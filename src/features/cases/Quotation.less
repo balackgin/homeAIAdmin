@@ -1,0 +1,64 @@
+@import '../../styles/mixins';
+
+.cases-quotation {
+  padding: 20px;
+  .red-color {
+    color: #D0021B;
+  }
+  .cases-quotation-block {
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .cases-quotation-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .cases-quotation-detail {
+      flex: 1;
+      .quotation-detail-header {
+        display: flex;
+        flex-direction: row;
+      }
+      .quotation-detail-title {
+        margin: 40px 0 20px 0;
+      }
+      .cases-quotation-outline {
+        background: #ffffff;
+        padding: 25px 50px;
+      }
+      .cases-quotation-detail-tab {
+        .ant-tabs-nav {
+          width: 100%;
+          .ant-tabs-tab {
+            width: 50%;
+            margin: 0;
+            text-align: center;
+          }
+          .ant-tabs-ink-bar {
+            width: 50%;
+          }
+        }
+        .cases-quotation-detail-sub-tab .ant-tabs-nav {
+          width: auto;
+        }
+      }
+      .quotation-tab-header {
+        .quotation-tab-header-title {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  // 通用
+  .cases-collapse-table-column {
+    color: #9B9B9B;
+    font-size: 12px;
+    background: #ffffff;
+    font-weight: 100;
+  }
+  .cases-collapse-table-line .cases-collapse-table-column {
+    color: #4A4A4A;
+  }
+}

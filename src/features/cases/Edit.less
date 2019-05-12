@@ -1,0 +1,71 @@
+@import '../../styles/mixins';
+
+.cases-edit {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+  .screenshot-image {
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: transparent;
+  }
+  .cases-edit-block {
+    font-size: 12px;
+    padding: 12px 30px;
+    border: 1px solid #DEDEDE;
+    border-radius: 6px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .cases-edit-body {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    .cases-edit-body-main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      .cases-edit-player {
+        position: relative;
+        flex: 1;
+        background-color: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .cases-edit-player-mask-left, .cases-edit-player-mask-right {
+          position: absolute;
+          top: 0;
+          height: 100%;
+          background-color: rgba(0, 0, 0, .75);
+        }
+        .cases-edit-player-mask-left {
+          left: 0;
+        }
+        .cases-edit-player-mask-right {
+          right: 0;
+        }
+        .cases-edit-player-mask-top, .cases-edit-player-mask-bottom {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          background-color: rgba(0, 0, 0, .75);
+        }
+        .cases-edit-player-mask-top {
+          top: 0;
+        }
+        .cases-edit-player-mask-bottom {
+          bottom: 0;
+        }
+      }
+    }
+    .cases-edit-body-result {
+      width: 400px;
+      // height: 100%;
+    }
+  }
+}

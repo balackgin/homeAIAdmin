@@ -1,0 +1,1 @@
+export { watchSaveUserInfo } from './saveUserInfo';

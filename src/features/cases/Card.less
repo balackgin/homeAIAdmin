@@ -1,0 +1,96 @@
+@import '../../styles/mixins';
+
+.case-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 214px;
+  height: 245px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border: 1px solid #dedede;
+  background-color: #fafafa;
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    border: 1px solid #2E7DFB;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .3);
+    .case-card-info .case-card-info-operations {
+      opacity: 1;
+    }
+  }
+  .case-card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    .case-card-preview-btn {
+      opacity: 0;
+    }
+    &:hover {
+      .case-card-preview-btn {
+        opacity: 1;
+      }
+    }
+  }
+  .case-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 90px;
+    padding: 10px 15px;
+    font-size: 12px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top: 1px solid #dedede;
+    .case-card-info-title {
+      color: #4a4a4a;
+      line-height: 18px;
+      height: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 13px;
+      letter-spacing: 0;
+    }
+    .case-card-info-desc {
+      font-size: 13px;
+      color: #4a4a4a;
+      letter-spacing: 0;
+      line-height: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      height: 20px;
+    }
+    .case-card-info-time {
+      color: #9b9b9b;
+      font-size: 13px;
+      letter-spacing: 0;
+      line-height: 14px;
+      height: 28px;
+    }
+    .case-card-info-operations {
+      position: absolute;
+      right: 16px;
+      bottom: 13px;
+      display: flex;
+      opacity: 0;
+      font-size: 20px;
+      font-weight: bold;
+      .case-card-info-icon {
+        cursor: pointer;
+        margin-left: 10px;
+        color: #9b9b9b;
+      }
+    }
+  }
+}

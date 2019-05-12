@@ -1,0 +1,121 @@
+@import '../../styles/mixins';
+
+.breadcrum {
+  font-size: 12px;
+  padding: 12px 30px;
+  border: 1px solid #DEDEDE;
+  border-radius: 6px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+.selected-case-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .case-pic {
+    width: 213px;
+    margin-bottom: 14px;
+  }
+  .description {
+    font-size: 14px;
+    color: #4A4A4A;
+    letter-spacing: 0;
+    line-height: 20px;
+  }
+}
+.room-card {
+  width: 224px;
+  height: 225px;
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  margin-right: 27px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  .delete-icon {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    color: #2e7dfb;
+    font-size: 20px;
+    opacity: 0;
+    display: block;
+  }
+  &:hover {
+    border: 1px solid #2e7dfb;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .3);
+    transition: all .3s;
+    .delete-icon {
+      transition: all .3s;
+      opacity: 1;
+    }
+  }
+  .room-pic {
+    width: 222px;
+    height: 125px;
+  }
+  .name {
+    margin-top: 10px;
+    margin-left: 16px;
+    width: 195px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #4A4A4A;
+    letter-spacing: 0;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .description {
+    margin-left: 16px;
+    width: 195px;
+    font-size: 14px;
+    color: #4A4A4A;
+    letter-spacing: 0;
+    line-height: 20px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+  }
+}
+
+.added-rooms {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sample-form-breadcrumb {
+  background-color: #ffffff;
+  // border: 1px solid #DEDEDE;
+  border-radius: 6px;
+  padding: 12px 30px;
+  margin-bottom: 20px;
+}
+
+.hint-text {
+  color: #afafaf;
+}
+
+.sample-form-bottom-button-group {
+  .sample-form-bottom-button-group-blank {
+    margin-right: 10px;
+  }
+  .sample-form-preview-button {
+    margin-right: 80px;
+  }
+  .sample-form-save-button {
+    margin-right: 20px;
+  }
+}

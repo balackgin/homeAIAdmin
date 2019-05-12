@@ -1,0 +1,126 @@
+@import '../../styles/mixins';
+
+.cases-edit-body-result {
+  background-color: #ffffff;
+  border: 1px solid #DEDEDE;
+  border-left: none;
+  display: flex;
+  flex-direction: column;
+  .cases-edit-result-header {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    .cases-edit-result-header-item {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 30px;
+      border-bottom: 1px solid #DEDEDE;
+      border-right: 1px solid #DEDEDE;
+      cursor: pointer;
+      &:hover {
+        color: #2E7DFB;
+        background-color: #FAFAFA;
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+    .selected {
+      color: #2E7DFB;
+      background-color: #FAFAFA;
+    }
+  }
+  .cases-edit-result-body {
+    display: flex;
+    flex-direction: row;
+    // flex: 1;
+    font-size: 12px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    .cases-edit-result-cover {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      .cases-edit-result-cover-container {
+        width: 150px;
+        height: 267px;
+        background-color: #FAFAFA;
+        border: 1px solid #DEDEDE;
+        margin-bottom: 4px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #cccccc;
+      }
+    }
+    .cases-edit-result-body-item {
+      margin-left: 10px;
+      margin-bottom: 20px;
+      .cases-edit-result-body-img {
+        position: relative;
+        width: 110px;
+        height: 110px;
+        margin-bottom: 5px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: #FAFAFA;
+        border: 1px solid #DEDEDE;
+        .cases-edit-result-body-delete {
+          opacity: 0;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 20px;
+          background-color: rgba(0, 0, 0, 0.5);
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+        &:hover .cases-edit-result-body-delete {
+          opacity: 1;
+        }
+      }
+      .cases-edit-result-body-input {
+        font-size: 12px;
+        width: 110px;
+      }
+      .cases-edit-result-body-title {
+        width: 110px;
+        height: 16px;
+        line-height: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 2px;
+        text-align: center;
+        &:hover {
+          background-color: #F0F5FF;
+        }
+      }
+    }
+    .cases-edit-result-body-tag {
+      cursor: pointer;
+      .cases-edit-result-body-img {
+        background-size: 40px;
+      }
+      .cases-edit-result-body-title {
+        &:hover {
+          background: none;
+        }
+      }
+    }
+  }
+}

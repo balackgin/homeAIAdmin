@@ -1,0 +1,48 @@
+@import '../../styles/mixins';
+
+.cases-edit-panel {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 385px;
+  height: 100%;
+  background-color: #ffffff;
+  font-size: 14px;
+  border: 1px solid #DEDEDE;
+  border-left: none;
+  .cases-edit-panel-header {
+    border-bottom: 1px solid #DEDEDE;
+    padding: 12px 30px;
+    background-color: #F4F4F4;
+  }
+  .cases-edit-panel-body {
+    flex: 1;
+    padding: 30px 50px 0 10px;
+    .cases-edit-panel-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      .cases-edit-panel-title {
+        width: 80px;
+        text-align: right;
+        margin-right: 8px;
+      }
+      .cases-edit-panel-input {
+        flex: 1;
+      }
+    }
+  }
+  .cases-edit-panel-body-btn-groups {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+    padding: 12px 30px;
+    width: 100%;
+    .cases-edit-panel-cancel-btn {
+      margin-right: 10px;
+    }
+  }
+}

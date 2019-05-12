@@ -1,0 +1,49 @@
+@import '../../styles/mixins';
+
+.samples-room-editor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  .steps {
+    width: 230px;
+    margin-left: 10px;
+    .room-title {
+      font-weight: 500;
+      font-size: 16px;
+      color: #4A4A4A;
+      letter-spacing: 0;
+      line-height: 20px;
+      margin-bottom: 40px;
+    }
+  }
+  .scene {
+    position: relative;
+    .save-img-btn {
+      position: absolute;
+      bottom: 100px;
+      right: 25px;
+      height: 25px;
+    }
+    .room-scene {
+      width: 400px;
+      height: 290px;
+      margin-right: 20px;
+    }
+    .pic-list {
+      margin-top: 15px;
+      width: 400px;
+      height: 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      .small-room-pic {
+        width: 108px;
+        height: 78px;
+      }
+    }
+  }
+
+}
+

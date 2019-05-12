@@ -1,0 +1,45 @@
+@import '../../styles/mixins';
+
+.card-ctnr {
+  .cover {
+    width: 224px;
+    height: 158px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card-info {
+    width: 224px;
+    height: 89px;
+    background: #fff;
+    border-radius: 0 0 6px 6px;
+    padding: 15px;
+    .styles {
+      width: 194px;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .preview {
+    position: absolute;
+    top: 70px;
+    left: 74px;
+  }
+
+  .actions {
+    position: absolute;
+    top: 216px;
+    left: 129px;
+    width: 78px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .icon {
+      color: #6b6b6b;
+      cursor: pointer;
+    }
+  }
+}

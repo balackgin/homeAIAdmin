@@ -1,0 +1,23 @@
+@import '../../styles/mixins';
+
+.contributions {
+  .contributions-title, .contributions-container {
+    width: 100%;
+  }
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #fff;
+    margin: 0 auto;
+    .style-set {
+      margin: 0 24px 24px 0;
+      border-color: #dedede;
+      border-radius: 6px;
+      overflow: hidden;
+      &:hover {
+        border-color: #2E7DFB;
+      }
+    }
+  }   
+}

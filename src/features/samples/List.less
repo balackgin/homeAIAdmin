@@ -1,0 +1,43 @@
+@import '../../styles/mixins';
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  border-radius: 6px;
+  padding: 15px 30px;
+  background-color: #fff;
+  .search {
+    width: 360px;
+  }
+  .search-button {
+    margin-right: 45px;
+  }
+}
+.table-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  border-radius: 6px;
+  padding: 15px 30px;
+  background-color: #fff;
+  .list-title {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #dedede;
+  }
+  .card-ctnr {
+    display: flex;
+    flex-wrap: wrap;
+    .sample-list-card {
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .pagination {
+    align-self: flex-end;
+    margin-top: 15px;
+  }
+}

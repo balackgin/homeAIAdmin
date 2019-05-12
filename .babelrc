@@ -1,0 +1,17 @@
+{
+  "presets": ["react-app"],
+  "plugins": ["react-hot-loader/babel", "syntax-dynamic-import", "lodash",
+	   [
+	   	"styled-components", {
+	      "fileName": false
+	    }
+	   ],
+  	 [
+        "import",
+        {
+          "libraryName": "antd",
+          "style": "css" 
+        }
+      ]
+   ]
+}

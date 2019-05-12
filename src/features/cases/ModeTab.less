@@ -1,0 +1,33 @@
+@import '../../styles/mixins';
+
+.cases-mode-tab {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #DEDEDE;
+  border-bottom: none;
+  .cases-edit-operations {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cases-edit-operation-block {
+    font-size: 14px;
+    padding: 12px 30px;
+    cursor: pointer;
+    &:hover {
+      color: #1890ff;
+    }
+    .cases-edit-operation-icon {
+      margin-right: 4px;
+    }
+  }
+  .cases-edit-operation-block-disabled {
+    color: #aaaaaa;
+    cursor: not-allowed;
+    &:hover {
+      color: #aaaaaa;
+    }
+  }
+}
